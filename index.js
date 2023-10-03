@@ -1,0 +1,17 @@
+
+let listHodnot = document.querySelectorAll(".cena");
+let minHodnota = 999999;
+let maxHodnota = 0;
+for (index = 0; index < listHodnot.length; index++) {
+    let hodnota = parseInt(listHodnot[index].innerText.replace(" ", ""));
+    if (hodnota >= maxHodnota) {
+        maxHodnota = hodnota;
+    }
+    if (hodnota <= minHodnota) {
+        minHodnota = hodnota;
+    }
+}
+console.log(maxHodnota);
+console.log(minHodnota);
+
+
